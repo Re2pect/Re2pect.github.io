@@ -1,0 +1,111 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+h3 {
+	font-size: 35px;
+}
+h2 {
+	font-size: 50px;
+}
+.header {
+	padding: 50px 95px;
+	background-color: #95A5A6;
+	color: white;
+}
+.nav {
+	background-color: #ecf0f1;
+	padding: 0 75px;
+}
+.nav a:first-child {
+	border-left: 1px solid #0e0e0e;
+}
+.nav a {
+	float: left;
+	display: block;
+	padding: 10px 20px;
+	color: #505050;
+	text-decoration: none;
+	border-right: 1px solid #0e0e0e;
+}
+.nav a:hover {
+	color: black;
+}
+.container {
+	padding: 25px 75px;
+}
+.third {
+	box-sizing: border-box;
+	float: left;
+	padding: 20px;
+	width: 33%;
+}
+.two-thirds {
+	box-sizing: border-box;
+	padding: 20px;
+	float:left;
+	width: 66%;
+}
+.clear {
+	clear: both;
+}
+.focus {
+	background-color: #8888ff;
+}
+.bordered {
+	border: 1px solid black;
+}
+.chart {
+	border: 1px solid black;
+	padding: 15px 0;
+	background-color: #ecf0f1;
+	text-align: center;
+}
+.player {
+	width: 75px;
+	float: left;
+}
+.player .bar {
+	width: 25px;
+	margin: 0 auto;
+	background-color: #00aa00;
+	padding: 5px;
+	color: white;
+}
+.player .bar.out {
+	background-color: black;
+}
+.player .bar.low {
+	background-color: #ff0000;
+}
+.player .bar.yellow {
+	background-color: #eeee00;
+	color: black;
+}
+@media screen and (max-width: 800px) {
+	.nav {
+		padding: 0;
+	}
+	.nav a {
+		display: block;
+		float: none;
+		border: none;
+		text-align: center;
+	}
+	.nav a:first-child {
+		border: none;
+	}
+	.chart {
+		width: auto;
+	}
+	.player {
+		width: 50%;
+	}
+	.bar {
+		height: 20px !important;
+		width: 50px !important;
+	}
+	.no-mobile {
+		display: none !important;
+	}
+}
